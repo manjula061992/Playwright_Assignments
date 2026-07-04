@@ -24,12 +24,10 @@ console.log("Email address:", emailAddress1);
 console.log(typeof emailAddress1); // Output: string
 
 //Coordinates of a location (latitude, longitude): 37.7749, -122.4194
-let Coordinates1: [number, number] = [37.7749, -122.4194];
-let latitude1: number = Coordinates1[0];
-let longitude1: number = Coordinates1[1];
-console.log("Coordinates:", latitude1, longitude1);
-console.log("Latitude type:", typeof latitude1); // Output: number
-console.log("Longitude type:", typeof longitude1); // Output: number 
+let Coordinates1: { latitude1: number; longitude1: number } = {latitude1: 37.7749, longitude1: -122.4194};
+console.log("Coordinates:", Coordinates1.latitude1, Coordinates1.longitude1);
+console.log("Latitude type:", typeof Coordinates1.latitude1); // Output: number
+console.log("Longitude type:", typeof Coordinates1.longitude1); // Output: number 
 
 //Person's marital status: true or false
 let isMarried1: boolean = false;
