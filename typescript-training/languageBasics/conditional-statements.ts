@@ -8,9 +8,9 @@
 //1. if-else statement
 let persentAge: number = 85;
 
-if (persentAge >= 95) {
+if (persentAge <= 95) {
     console.log(" Grade A");
-if (persentAge >= 90)  {
+if (persentAge <= 90)  {
     console.log("you are distinction");
     console.log("you will get the gold medal")
 }else {
@@ -27,6 +27,23 @@ if (persentAge >= 90)  {
               console.log("you are failed");
            }
 
+
+//2. switch statement
+let environment: string = "PROD"   ; 
+switch(environment) {
+  case "Dev":
+       console.log("loging to the application with 'dev.netflix.com' ");
+       break;
+  case "QA":
+       console.log("loging to the application with 'qa.netflix.com' ");
+       break;
+  case "PROD":
+       console.log("loging to the application with 'netflix.com' ");
+       break;
+  default:
+       console.log("please provide the valid environment");
+
+}       
 
     
   
